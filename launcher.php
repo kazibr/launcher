@@ -19,6 +19,9 @@ $hint = get_post_meta( get_the_ID(),'hint', true );
 
     <aside id="fh5co-aside" role="sidebar" class="text-center aside-bg">
         <h1 id="fh5co-logo"><a href="<?php echo site_url();?>"><?php bloginfo( 'name' );?></a></h1>
+        <div class="greeting-wrapper">
+			<h2 class="greeting-message">Hello, </h2>
+		</div>
     </aside>
 
     <div id="fh5co-main-content">
