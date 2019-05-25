@@ -27,12 +27,14 @@ function launcher_assets(){
             $launcher_year = get_post_meta( get_the_ID(), 'year', true );
             $launcher_month = get_post_meta( get_the_ID(), 'month', true );
             $launcher_day = get_post_meta( get_the_ID(), 'day', true );
+            $launcher_gtime = get_post_meta( get_the_ID(), 'gtime', true );
 
             wp_localize_script('main-js', 'datedata', 
                 array(
                     'year' => $launcher_year,
                     'month' => $launcher_month,
-                    'day' => $launcher_day
+                    'day' => $launcher_day,
+                    'time' => $launcher_gtime
                 )
             );
         }else{

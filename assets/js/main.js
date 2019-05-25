@@ -96,7 +96,9 @@
 
 	};
 
-	var thehours = new Date().getHours();
+	//var thehours = new Date().getHours();
+	var thehours = datedata.time;
+	//console.log(thehours);
 	var themessage;
 	var morning = ('Good morning');
 	var afternoon = ('Good afternoon');
